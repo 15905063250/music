@@ -1,0 +1,365 @@
+INFO music  70 当前图片缓存目录: E:\3\MusicPlayer\cache
+INFO configDownloadFrameFeatures  87 下载目标变更E:\3\MusicPlayer\downloads
+INFO configDownloadFrameFeatures  87 下载目标变更G:/桌面/3/MusicPlayer/downloads
+WARNING base  49 读取或保存cookies出错 文件名: ['cookies/downloadInfo/downloadFolder.cks']
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\widgets\base.py", line 47, in _exec
+    func(*args)
+  File "E:\3\MusicPlayer\features\configDownloadFrameFeatures.py", line 214, in loadCookies
+    self._setDownloadFolder(self.myDownloadFolder)
+  File "E:\3\MusicPlayer\features\configDownloadFrameFeatures.py", line 88, in _setDownloadFolder
+    self.fromPathLoadSong(folderName)
+  File "E:\3\MusicPlayer\features\configDownloadFrameFeatures.py", line 145, in fromPathLoadSong
+    os.mkdir(selectFolder)
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'G:/桌面/3/MusicPlayer/downloads'
+WARNING base  49 读取或保存cookies出错 文件名: ['cookies/native/local.cks']
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\widgets\base.py", line 47, in _exec
+    func(*args)
+  File "E:\3\MusicPlayer\features\configNativeFeatures.py", line 175, in loadCookies
+    self.loadMusic()
+  File "E:\3\MusicPlayer\features\configNativeFeatures.py", line 72, in loadMusic
+    user_name = ConfigWindow.result[0]
+IndexError: tuple index out of range
+INFO netEaseApi  53 进行网易云Url请求, args: ('http://music.163.com/api/playlist/list?cat=%E5%85%A8%E9%83%A8%E6%AD%8C%E5%8D%95&type=all&order=all&offset=0&total=true&limit=30&index=1',), kwargs: {'method': 'GET', 'cookies': {'appver': '2.1.2.184499', 'os': 'pc', 'channel': 'netease'}}
+ERROR apiRequestsBase  52 retry function <function HttpRequest.httpRequest at 0x000001D65BA80A60> 
+ args (<xiamiApi.XiamiApi object at 0x000001D65BD43790>, 'http://api.xiami.com/web?v=2.0&app_key=1&_ksTS=1459927525542_91&page=1&limit=30&callback=jsonp92&r=collect/recommend'),
+ kwargs {'method': 'GET'} 
+ times:0
+Traceback (most recent call last):
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\util\connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "D:\anaconda\envs\python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "D:\anaconda\envs\python38\lib\http\client.py", line 1256, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "D:\anaconda\envs\python38\lib\http\client.py", line 1302, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "D:\anaconda\envs\python38\lib\http\client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\anaconda\envs\python38\lib\http\client.py", line 1011, in _send_output
+    self.send(msg)
+  File "D:\anaconda\envs\python38\lib\http\client.py", line 951, in send
+    self.connect()
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001D65DD32B80>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\python38\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='api.xiami.com', port=80): Max retries exceeded with url: /web?v=2.0&app_key=1&_ksTS=1459927525542_91&page=1&limit=30&callback=jsonp92&r=collect/recommend (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D65DD32B80>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 50, in _filter
+    return func(*args, **kwargs)
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 103, in httpRequest
+    html = self.sessions.get(action, headers=headers, cookies=cookies, timeout=timeout)
+  File "D:\anaconda\envs\python38\lib\site-packages\requests\sessions.py", line 600, in get
+    return self.request("GET", url, **kwargs)
+  File "D:\anaconda\envs\python38\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\anaconda\envs\python38\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\anaconda\envs\python38\lib\site-packages\requests\adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='api.xiami.com', port=80): Max retries exceeded with url: /web?v=2.0&app_key=1&_ksTS=1459927525542_91&page=1&limit=30&callback=jsonp92&r=collect/recommend (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D65DD32B80>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+ERROR apiRequestsBase  52 retry function <function HttpRequest.httpRequest at 0x000001D65BA80A60> 
+ args (<xiamiApi.XiamiApi object at 0x000001D65BD43790>, 'http://api.xiami.com/web?v=2.0&app_key=1&_ksTS=1459927525542_91&page=1&limit=30&callback=jsonp92&r=collect/recommend'),
+ kwargs {'method': 'GET'} 
+ times:1
+Traceback (most recent call last):
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\util\connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "D:\anaconda\envs\python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "D:\anaconda\envs\python38\lib\http\client.py", line 1256, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "D:\anaconda\envs\python38\lib\http\client.py", line 1302, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "D:\anaconda\envs\python38\lib\http\client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\anaconda\envs\python38\lib\http\client.py", line 1011, in _send_output
+    self.send(msg)
+  File "D:\anaconda\envs\python38\lib\http\client.py", line 951, in send
+    self.connect()
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001D65DD23220>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\python38\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='api.xiami.com', port=80): Max retries exceeded with url: /web?v=2.0&app_key=1&_ksTS=1459927525542_91&page=1&limit=30&callback=jsonp92&r=collect/recommend (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D65DD23220>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 50, in _filter
+    return func(*args, **kwargs)
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 103, in httpRequest
+    html = self.sessions.get(action, headers=headers, cookies=cookies, timeout=timeout)
+  File "D:\anaconda\envs\python38\lib\site-packages\requests\sessions.py", line 600, in get
+    return self.request("GET", url, **kwargs)
+  File "D:\anaconda\envs\python38\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\anaconda\envs\python38\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\anaconda\envs\python38\lib\site-packages\requests\adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='api.xiami.com', port=80): Max retries exceeded with url: /web?v=2.0&app_key=1&_ksTS=1459927525542_91&page=1&limit=30&callback=jsonp92&r=collect/recommend (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D65DD23220>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+ERROR apiRequestsBase  52 retry function <function HttpRequest.httpRequest at 0x000001D65BA80A60> 
+ args (<xiamiApi.XiamiApi object at 0x000001D65BD43790>, 'http://api.xiami.com/web?v=2.0&app_key=1&_ksTS=1459927525542_91&page=1&limit=30&callback=jsonp92&r=collect/recommend'),
+ kwargs {'method': 'GET'} 
+ times:2
+Traceback (most recent call last):
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\util\connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "D:\anaconda\envs\python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "D:\anaconda\envs\python38\lib\http\client.py", line 1256, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "D:\anaconda\envs\python38\lib\http\client.py", line 1302, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "D:\anaconda\envs\python38\lib\http\client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\anaconda\envs\python38\lib\http\client.py", line 1011, in _send_output
+    self.send(msg)
+  File "D:\anaconda\envs\python38\lib\http\client.py", line 951, in send
+    self.connect()
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001D65DD32AC0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\python38\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "D:\anaconda\envs\python38\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='api.xiami.com', port=80): Max retries exceeded with url: /web?v=2.0&app_key=1&_ksTS=1459927525542_91&page=1&limit=30&callback=jsonp92&r=collect/recommend (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D65DD32AC0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 50, in _filter
+    return func(*args, **kwargs)
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 103, in httpRequest
+    html = self.sessions.get(action, headers=headers, cookies=cookies, timeout=timeout)
+  File "D:\anaconda\envs\python38\lib\site-packages\requests\sessions.py", line 600, in get
+    return self.request("GET", url, **kwargs)
+  File "D:\anaconda\envs\python38\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\anaconda\envs\python38\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\anaconda\envs\python38\lib\site-packages\requests\adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='api.xiami.com', port=80): Max retries exceeded with url: /web?v=2.0&app_key=1&_ksTS=1459927525542_91&page=1&limit=30&callback=jsonp92&r=collect/recommend (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D65DD32AC0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+ERROR apiRequestsBase  55 function <function HttpRequest.httpRequest at 0x000001D65BA80A60> is wrong. args (<xiamiApi.XiamiApi object at 0x000001D65BD43790>, 'http://api.xiami.com/web?v=2.0&app_key=1&_ksTS=1459927525542_91&page=1&limit=30&callback=jsonp92&r=collect/recommend'),
+ kwargs {'method': 'GET'}
+NoneType: None
+INFO xiamiApi  51 进行xiami Url请求, args: ('http://api.xiami.com/web?v=2.0&app_key=1&_ksTS=1459927525542_91&page=1&limit=30&callback=jsonp92&r=collect/recommend',), kwargs: {'method': 'GET'}
+ERROR apiRequestsBase  32 error has ignored.
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 30, in ignored
+    yield
+  File "E:\3\MusicPlayer\apis\xiamiApi.py", line 54, in httpRequest
+    return html.text
+AttributeError: 'bool' object has no attribute 'text'
+INFO xiamiApi  56 url: http://api.xiami.com/web?v=2.0&app_key=1&_ksTS=1459927525542_91&page=1&limit=30&callback=jsonp92&r=collect/recommend 请求失败. Header: None
+ERROR apiRequestsBase  32 error has ignored.
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 30, in ignored
+    yield
+  File "E:\3\MusicPlayer\apis\xiamiApi.py", line 66, in playList
+    response = json.loads(response[len('jsonp92('):-len(')')])
+  File "D:\anaconda\envs\python38\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "D:\anaconda\envs\python38\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\anaconda\envs\python38\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO qqApi  41 进行QQ Url请求, args: ('https://c.y.qq.com/splcloud/fcgi-bin/fcg_get_diss_by_tag.fcg?rnd=0.5136307078685405&g_tk=5381&jsonpCallback=getPlaylist&loginUin=0&hostUin=0&format=jsonp&inCharset=utf8&outCharset=utf-8&notice=0&platform=yqq&needNewCode=0&categoryId=10000000&sortId=5&sin=30&ein=29',), kwargs: {'method': 'GET', 'headers': {'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Connection': 'keep-alive', 'Pragma': 'no-cache', 'Cache-Control': 'no-cache', 'Accept-Encoding': 'gzip,deflate,sdch', 'Accept-Language': 'zh-CN,zh;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36', 'Host': 'c.y.qq.com', 'Referer': 'https://y.qq.com/portal/playlist.html'}}
+INFO netEaseApi  53 进行网易云Url请求, args: ('http://music.163.com/api/playlist/detail?id=6783504176',), kwargs: {'method': 'GET', 'cookies': {'appver': '2.1.2.184499', 'os': 'pc', 'channel': 'netease'}, 'headers': {'User - Agent': 'Mozilla/5.0(Windows NT 10.0;Win64;x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/105.0. 0.0 Safari/537.36'}}
+ERROR apiRequestsBase  32 error has ignored.
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 30, in ignored
+    yield
+  File "E:\3\MusicPlayer\apis\netEaseApi.py", line 137, in details_playlist
+    return html['result']
+KeyError: 'result'
+INFO netEaseApi  53 进行网易云Url请求, args: ('http://music.163.com/api/playlist/detail?id=2921577629',), kwargs: {'method': 'GET', 'cookies': {'appver': '2.1.2.184499', 'os': 'pc', 'channel': 'netease'}, 'headers': {'User - Agent': 'Mozilla/5.0(Windows NT 10.0;Win64;x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/105.0. 0.0 Safari/537.36'}}
+ERROR apiRequestsBase  32 error has ignored.
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 30, in ignored
+    yield
+  File "E:\3\MusicPlayer\apis\netEaseApi.py", line 137, in details_playlist
+    return html['result']
+KeyError: 'result'
+INFO netEaseApi  53 进行网易云Url请求, args: ('http://music.163.com/api/playlist/detail?id=2833792275',), kwargs: {'method': 'GET', 'cookies': {'appver': '2.1.2.184499', 'os': 'pc', 'channel': 'netease'}, 'headers': {'User - Agent': 'Mozilla/5.0(Windows NT 10.0;Win64;x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/105.0. 0.0 Safari/537.36'}}
+ERROR apiRequestsBase  32 error has ignored.
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 30, in ignored
+    yield
+  File "E:\3\MusicPlayer\apis\netEaseApi.py", line 137, in details_playlist
+    return html['result']
+KeyError: 'result'
+INFO netEaseApi  53 进行网易云Url请求, args: ('http://music.163.com/api/playlist/detail?id=7319640290',), kwargs: {'method': 'GET', 'cookies': {'appver': '2.1.2.184499', 'os': 'pc', 'channel': 'netease'}, 'headers': {'User - Agent': 'Mozilla/5.0(Windows NT 10.0;Win64;x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/105.0. 0.0 Safari/537.36'}}
+ERROR apiRequestsBase  32 error has ignored.
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 30, in ignored
+    yield
+  File "E:\3\MusicPlayer\apis\netEaseApi.py", line 137, in details_playlist
+    return html['result']
+KeyError: 'result'
+INFO netEaseApi  53 进行网易云Url请求, args: ('http://music.163.com/api/playlist/detail?id=2724482',), kwargs: {'method': 'GET', 'cookies': {'appver': '2.1.2.184499', 'os': 'pc', 'channel': 'netease'}, 'headers': {'User - Agent': 'Mozilla/5.0(Windows NT 10.0;Win64;x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/105.0. 0.0 Safari/537.36'}}
+ERROR apiRequestsBase  32 error has ignored.
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 30, in ignored
+    yield
+  File "E:\3\MusicPlayer\apis\netEaseApi.py", line 137, in details_playlist
+    return html['result']
+KeyError: 'result'
+INFO netEaseApi  53 进行网易云Url请求, args: ('http://music.163.com/api/playlist/detail?id=6973221590',), kwargs: {'method': 'GET', 'cookies': {'appver': '2.1.2.184499', 'os': 'pc', 'channel': 'netease'}, 'headers': {'User - Agent': 'Mozilla/5.0(Windows NT 10.0;Win64;x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/105.0. 0.0 Safari/537.36'}}
+ERROR apiRequestsBase  32 error has ignored.
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 30, in ignored
+    yield
+  File "E:\3\MusicPlayer\apis\netEaseApi.py", line 137, in details_playlist
+    return html['result']
+KeyError: 'result'
+INFO netEaseApi  53 进行网易云Url请求, args: ('http://music.163.com/api/playlist/detail?id=369583813',), kwargs: {'method': 'GET', 'cookies': {'appver': '2.1.2.184499', 'os': 'pc', 'channel': 'netease'}, 'headers': {'User - Agent': 'Mozilla/5.0(Windows NT 10.0;Win64;x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/105.0. 0.0 Safari/537.36'}}
+ERROR apiRequestsBase  32 error has ignored.
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 30, in ignored
+    yield
+  File "E:\3\MusicPlayer\apis\netEaseApi.py", line 137, in details_playlist
+    return html['result']
+KeyError: 'result'
+INFO netEaseApi  53 进行网易云Url请求, args: ('http://music.163.com/api/playlist/detail?id=5172076242',), kwargs: {'method': 'GET', 'cookies': {'appver': '2.1.2.184499', 'os': 'pc', 'channel': 'netease'}, 'headers': {'User - Agent': 'Mozilla/5.0(Windows NT 10.0;Win64;x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/105.0. 0.0 Safari/537.36'}}
+ERROR apiRequestsBase  32 error has ignored.
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 30, in ignored
+    yield
+  File "E:\3\MusicPlayer\apis\netEaseApi.py", line 137, in details_playlist
+    return html['result']
+KeyError: 'result'
+INFO netEaseApi  53 进行网易云Url请求, args: ('http://music.163.com/api/playlist/detail?id=2183170220',), kwargs: {'method': 'GET', 'cookies': {'appver': '2.1.2.184499', 'os': 'pc', 'channel': 'netease'}, 'headers': {'User - Agent': 'Mozilla/5.0(Windows NT 10.0;Win64;x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/105.0. 0.0 Safari/537.36'}}
+ERROR apiRequestsBase  32 error has ignored.
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 30, in ignored
+    yield
+  File "E:\3\MusicPlayer\apis\netEaseApi.py", line 137, in details_playlist
+    return html['result']
+KeyError: 'result'
+INFO netEaseApi  53 进行网易云Url请求, args: ('http://music.163.com/api/playlist/detail?id=6697491422',), kwargs: {'method': 'GET', 'cookies': {'appver': '2.1.2.184499', 'os': 'pc', 'channel': 'netease'}, 'headers': {'User - Agent': 'Mozilla/5.0(Windows NT 10.0;Win64;x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/105.0. 0.0 Safari/537.36'}}
+ERROR apiRequestsBase  32 error has ignored.
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 30, in ignored
+    yield
+  File "E:\3\MusicPlayer\apis\netEaseApi.py", line 137, in details_playlist
+    return html['result']
+KeyError: 'result'
+INFO netEaseApi  53 进行网易云Url请求, args: ('http://music.163.com/api/playlist/detail?id=7086555755',), kwargs: {'method': 'GET', 'cookies': {'appver': '2.1.2.184499', 'os': 'pc', 'channel': 'netease'}, 'headers': {'User - Agent': 'Mozilla/5.0(Windows NT 10.0;Win64;x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/105.0. 0.0 Safari/537.36'}}
+ERROR apiRequestsBase  32 error has ignored.
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 30, in ignored
+    yield
+  File "E:\3\MusicPlayer\apis\netEaseApi.py", line 137, in details_playlist
+    return html['result']
+KeyError: 'result'
+INFO netEaseApi  53 进行网易云Url请求, args: ('http://music.163.com/api/playlist/detail?id=7453582179',), kwargs: {'method': 'GET', 'cookies': {'appver': '2.1.2.184499', 'os': 'pc', 'channel': 'netease'}, 'headers': {'User - Agent': 'Mozilla/5.0(Windows NT 10.0;Win64;x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/105.0. 0.0 Safari/537.36'}}
+ERROR apiRequestsBase  32 error has ignored.
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 30, in ignored
+    yield
+  File "E:\3\MusicPlayer\apis\netEaseApi.py", line 137, in details_playlist
+    return html['result']
+KeyError: 'result'
+INFO netEaseApi  53 进行网易云Url请求, args: ('http://music.163.com/api/playlist/detail?id=5017809011',), kwargs: {'method': 'GET', 'cookies': {'appver': '2.1.2.184499', 'os': 'pc', 'channel': 'netease'}, 'headers': {'User - Agent': 'Mozilla/5.0(Windows NT 10.0;Win64;x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/105.0. 0.0 Safari/537.36'}}
+ERROR apiRequestsBase  32 error has ignored.
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 30, in ignored
+    yield
+  File "E:\3\MusicPlayer\apis\netEaseApi.py", line 137, in details_playlist
+    return html['result']
+KeyError: 'result'
+INFO netEaseApi  53 进行网易云Url请求, args: ('http://music.163.com/api/playlist/detail?id=2905900351',), kwargs: {'method': 'GET', 'cookies': {'appver': '2.1.2.184499', 'os': 'pc', 'channel': 'netease'}, 'headers': {'User - Agent': 'Mozilla/5.0(Windows NT 10.0;Win64;x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/105.0. 0.0 Safari/537.36'}}
+ERROR apiRequestsBase  32 error has ignored.
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 30, in ignored
+    yield
+  File "E:\3\MusicPlayer\apis\netEaseApi.py", line 137, in details_playlist
+    return html['result']
+KeyError: 'result'
+INFO netEaseApi  53 进行网易云Url请求, args: ('http://music.163.com/api/playlist/detail?id=7460722332',), kwargs: {'method': 'GET', 'cookies': {'appver': '2.1.2.184499', 'os': 'pc', 'channel': 'netease'}, 'headers': {'User - Agent': 'Mozilla/5.0(Windows NT 10.0;Win64;x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/105.0. 0.0 Safari/537.36'}}
+ERROR apiRequestsBase  32 error has ignored.
+Traceback (most recent call last):
+  File "E:\3\MusicPlayer\apis\apiRequestsBase.py", line 30, in ignored
+    yield
+  File "E:\3\MusicPlayer\apis\netEaseApi.py", line 137, in details_playlist
+    return html['result']
+KeyError: 'result'

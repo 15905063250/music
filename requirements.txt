@@ -1,0 +1,14 @@
+pip install requests
+pip install eyed3==0.8
+pip install pycryptodome(pycryptodome安装不上可以安装pycryptodomex）
+pip install quamash
+pip install PyQt5
+pip install pandas
+pip install logger
+pip install sys
+pip install random
+pip install crypto
+pip install json
+pip install asyncio
+pip install requests
+pip install sqlite3

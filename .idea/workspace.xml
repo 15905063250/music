@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8510a6e4-8250-46ec-ae74-685b75daf48b" name="Default Changelist" comment="Default Changelist" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2E9n9QunpWFr3CJjzmdu1Gagiti" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\3\MusicPlayer\widgets" />
+      <recent name="E:\3\MusicPlayer\QSS" />
+      <recent name="C:\Users\Administrator\Desktop\新建文件夹\MusicBox\MusicPlayer" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\本地歌曲\MusicBox\MusicPlayer\resource" />
+      <recent name="C:\Users\Administrator\Desktop\本地歌曲\MusicBox\MusicPlayer\widgets" />
+      <recent name="C:\Users\Administrator\Desktop\本地歌曲\MusicBox\MusicPlayer" />
+      <recent name="C:\Users\Administrator\Desktop\新建文件夹\MusicBox\MusicPlayer\features" />
+      <recent name="C:\Users\Administrator\Desktop\新建文件夹\MusicBox" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.music">
+    <configuration name="configDownloadFrameFeatures" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MusicBox" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MusicPlayer/features" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MusicPlayer/features/configDownloadFrameFeatures.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="music" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MusicBox" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\anaconda\envs\python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MusicPlayer" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MusicPlayer/music.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="netEaseApi" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MusicBox" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MusicPlayer/apis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MusicPlayer/apis/netEaseApi.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="player" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MusicBox" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MusicPlayer/widgets" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MusicPlayer/widgets/player.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="recommend" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MusicBox" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MusicPlayer/features" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MusicPlayer/features/recommend.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.configDownloadFrameFeatures" />
+      <item itemvalue="Python.music" />
+      <item itemvalue="Python.netEaseApi" />
+      <item itemvalue="Python.player" />
+      <item itemvalue="Python.recommend" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.music" />
+        <item itemvalue="Python.recommend" />
+        <item itemvalue="Python.netEaseApi" />
+        <item itemvalue="Python.player" />
+        <item itemvalue="Python.configDownloadFrameFeatures" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="应用程序级" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8510a6e4-8250-46ec-ae74-685b75daf48b" name="Default Changelist" comment="" />
+      <created>1662016515338</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662016515338</updated>
+      <workItem from="1662016517221" duration="1156000" />
+      <workItem from="1663553645543" duration="297000" />
+      <workItem from="1663553959987" duration="10588000" />
+      <workItem from="1663569743685" duration="3641000" />
+      <workItem from="1663672852096" duration="3246000" />
+      <workItem from="1663895204935" duration="310000" />
+      <workItem from="1663900291572" duration="5857000" />
+      <workItem from="1664004510212" duration="32009000" />
+      <workItem from="1664105331874" duration="15000" />
+      <workItem from="1664105351217" duration="23397000" />
+      <workItem from="1664168124537" duration="917000" />
+      <workItem from="1664169917524" duration="12088000" />
+      <workItem from="1664190899292" duration="17870000" />
+      <workItem from="1664223107103" duration="1150000" />
+      <workItem from="1664429103538" duration="1947000" />
+      <workItem from="1664434158025" duration="1555000" />
+      <workItem from="1664435767386" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1664435184613">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1664435184613" />
+    <state width="1237" height="157" key="GridCell.Tab.0.bottom" timestamp="1664435732220">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="157" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1664435732220" />
+    <state width="1237" height="157" key="GridCell.Tab.0.center" timestamp="1664435732220">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="157" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1664435732220" />
+    <state width="1237" height="157" key="GridCell.Tab.0.left" timestamp="1664435732219">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="157" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1664435732219" />
+    <state width="1237" height="157" key="GridCell.Tab.0.right" timestamp="1664435732220">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="157" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1664435732220" />
+    <state x="-233" y="0" key="SettingsEditor" timestamp="1664434807202">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="-233" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1664434807202" />
+    <state x="338" y="48" width="605" height="584" key="find.popup" timestamp="1664435020615">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="338" y="48" width="605" height="584" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1664435020615" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/music_py$music.coverage" NAME="music Coverage Results" MODIFIED="1664435250297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MusicPlayer" />
+    <SUITE FILE_PATH="coverage/music_py$configDownloadFrameFeatures.coverage" NAME="configDownloadFrameFeatures 覆盖结果" MODIFIED="1664018635307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MusicPlayer/features" />
+    <SUITE FILE_PATH="coverage/MusicBox$configMainFeatures.coverage" NAME="configMainFeatures Coverage Results" MODIFIED="1663554969863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MusicPlayer/features" />
+    <SUITE FILE_PATH="coverage/MusicBox$netEaseApi.coverage" NAME="netEaseApi Coverage Results" MODIFIED="1663557992309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MusicPlayer/apis" />
+    <SUITE FILE_PATH="coverage/music_py$player.coverage" NAME="player 覆盖结果" MODIFIED="1664133155447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MusicPlayer/widgets" />
+    <SUITE FILE_PATH="coverage/music_py$netEaseSingsFrames.coverage" NAME="netEaseSingsFrames 覆盖结果" MODIFIED="1664014145344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MusicPlayer/widgets" />
+    <SUITE FILE_PATH="coverage/music_py$recommend.coverage" NAME="recommend 覆盖结果" MODIFIED="1664224247560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MusicPlayer/features" />
+    <SUITE FILE_PATH="coverage/MusicBox$music.coverage" NAME="music Coverage Results" MODIFIED="1663676193351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MusicPlayer" />
+    <SUITE FILE_PATH="coverage/music_py$netEaseApi.coverage" NAME="netEaseApi 覆盖结果" MODIFIED="1664217517183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MusicPlayer/apis" />
+  </component>
+</project>

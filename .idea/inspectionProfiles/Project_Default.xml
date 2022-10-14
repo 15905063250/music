@@ -1,0 +1,44 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="@click" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="InstalledPackageInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="CifarRead" />
+          <option value="a.printf" />
+          <option value="a.sess" />
+          <option value="简单神经网络.feed_dict" />
+          <option value="简单神经网络.saver" />
+          <option value="简单神经网络.sess" />
+          <option value="简单神经网络.mnist" />
+          <option value="卷积神经网络.convFC" />
+          <option value="简单神经网络.y_predict" />
+          <option value="简单神经网络.x" />
+          <option value="简单神经网络.y_true" />
+          <option value="卷积神经网络.mnist" />
+          <option value="卷积神经网络.train_op" />
+          <option value="卷积神经网络.y_ture" />
+          <option value="卷积神经网络.accuracy" />
+          <option value="卷积神经网络.x" />
+          <option value="xiaoyu_mall.apps.verifications.libs.yuntongxun.ccp_sms.*" />
+          <option value="xml.dom" />
+          <option value="xiaoyu_mall.apps.verifications.*" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="ReferenceExistsInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="UnusedInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+  </profile>
+</component>
